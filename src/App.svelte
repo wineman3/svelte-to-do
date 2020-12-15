@@ -1,17 +1,20 @@
 <script>
-	export let name;
+import Todo from "./components/Todo.svelte";
+import Todos from "./components/Todos.svelte";
+
+	 export let name;
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h1>{name}</h1>
+	<Todos/>
 </main>
 
 <style>
 	main {
 		text-align: center;
 		padding: 1em;
-		max-width: 240px;
+		max-width: 640px;
 		margin: 0 auto;
 	}
 
